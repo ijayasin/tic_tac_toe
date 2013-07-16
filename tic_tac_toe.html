@@ -1,0 +1,21 @@
+<!-- Tic Tac Toe - Indika Jayasionghe -->
+<html>
+	<head>
+		<title>Tic Tac Toe - Indika</title>
+		<link href="tic_tac_toe.css" media="screen" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		<h1>Tic Tac Toe - Indika</h1>
+		
+		<div id="tic_tac_toe_board_div"></div>
+		
+		<script type="text/javascript" src="tic_tac_toe.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				var div = document.getElementById('tic_tac_toe_board_div');
+				window.tic_tac_toe_game = new TicTacToe( document, div );
+			}
+		</script>
+	</body>
+</html>
