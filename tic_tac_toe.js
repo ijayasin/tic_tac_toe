@@ -180,3 +180,4 @@ var TicTacToe = function(){
 	
 	return klass;
 }();
+
