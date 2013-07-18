@@ -27,6 +27,7 @@ var TicTacToe = function(){
 	function createBoard(div){
 		var i, newdiv, parent, player_h2;
 		
+		// Remove any exisiting children
 		div.innerHTML = '';
 		
 		// Create checker board
@@ -53,7 +54,6 @@ var TicTacToe = function(){
 		player_h2 = document.createElement('h2');
 		player_h2.setAttribute('id', 'player_turn');
 		player_h2.innerHTML = playerTurnText();  
-		
 		div.appendChild(player_h2);
 	}
 	
@@ -177,5 +177,6 @@ var TicTacToe = function(){
 	function getCell(index){
 		return document.getElementById('board_cell_'+index);
 	}
+	
 	return klass;
 }();
